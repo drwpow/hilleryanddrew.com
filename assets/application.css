@@ -993,9 +993,10 @@ th {
 
 .hero {
   height: 100vh;
+  overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
-  width: 100%;
+  width: 100vw;
 
   &::after {
     bottom: calc(1.5 * var(--b-space));
@@ -1034,7 +1035,8 @@ th {
 }
 
 .hero-bg {
-  background-image: image-url("ornament-tr.jpg"), image-url("ornament-bl.jpg");
+  background-image: url("/assets/ornament-tr.jpg"),
+    url("/assets/ornament-bl.jpg");
   background-position: top right, bottom left;
   background-repeat: no-repeat;
   background-size: 50% auto, 42% auto;
@@ -1134,18 +1136,22 @@ th {
 
 /* ----- Photos ----- */
 .photos {
+  max-width: 100%;
+  overflow: hidden;
   padding-bottom: var(--b-space-s);
   padding-left: var(--b-space-s);
   padding-right: var(--b-space-s);
   position: relative;
   transform-style: preserve-3d;
+
   @media (width >= 480px) {
     padding-bottom: 1.25 * var(--b-space-xl);
     padding-left: var(--b-space);
     padding-right: var(--b-space);
   }
+
   &::before {
-    background-image: image-url("ornament-extra.jpg");
+    background-image: url("/assets/ornament-extra.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 25% auto;
@@ -1164,6 +1170,7 @@ th {
     }
   }
 }
+
 .photo-row {
   margin-top: var(--b-space);
   margin-bottom: var(--b-space);
