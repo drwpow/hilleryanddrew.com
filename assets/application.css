@@ -473,10 +473,11 @@ body {
 html.home {
   height: 100%;
   overflow: hidden;
+
   body {
     height: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     perspective: 1px;
   }
 }
@@ -993,7 +994,7 @@ th {
 
 .hero {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   transform-style: preserve-3d;
   width: 100vw;
@@ -1137,7 +1138,7 @@ th {
 /* ----- Photos ----- */
 .photos {
   max-width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-bottom: var(--b-space-s);
   padding-left: var(--b-space-s);
   padding-right: var(--b-space-s);
